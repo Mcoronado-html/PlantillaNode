@@ -14,8 +14,14 @@ try {
         
         const user = users.find(user => 
             user.username === userLog.value && user.password === passLog.value
+            && user.role === "Student" 
         );
         
+        const userAdmin = users.find(user => 
+            user.username === userLog.value && user.password === passLog.value
+            && user.role === "Admin" 
+        );
+
         if (user) {
             console.log("Entra");
             Swal.fire({
@@ -23,14 +29,22 @@ try {
                 text: 'Access approved',
                 icon: 'success',
                 confirmButtonText: 'Cool'
-            })
-            window.location.href = 'Q&A.html';
-        } else {
-             Swal.fire({
-                 icon: "error",
-                 title: "Wrong credentials",
-             });
-            }
+            }) 
+            localStorage.setItem("userName", user.username)
+            setTimeout(() => {
+            window.location.href = 'Q&A.html';       
+            }, 800);
+         
+        } else if(userAdmin){
+            console.log("Admin")  
+            // window.location.href = 'Q&A.html';
+
+        }else{ 
+            Swal.fire({
+                icon: "error",
+                title: "Wrong credentials",
+            });
+        }
         });
 } catch (error) {
 }
@@ -39,11 +53,12 @@ btnSign.addEventListener("click", async function () {
     
      let user = {
          "username" : userSign.value,
-         "password": passSign.value
+         "password": passSign.value,
+         "role": "Student"
          }
          await postUsers(user,"users")
 })
-    
+     
     
     // getUsers("questions")
     // getUsers("users")

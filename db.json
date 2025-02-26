@@ -1,44 +1,42 @@
 {
   "questions": [
-    {
-      "id": "61a1"
-    }
+
   ],
   "users": [
     {
-      "username": "Juanito",
-      "password": "12345",
-      "id": "fc0d"
-    },
-    {
-      "id": "aec9",
-      "username": "Pepe",
-      "password": "1234"
-    },
-    {
-      "id": "a0b9",
-      "username": "Pepe",
-      "password": "1234"
-    },
-    {
       "id": "258f",
       "username": "Mario",
-      "password": "Coronado"
+      "password": "Coronado",
+      "role": "Admin"
     },
     {
-      "id": "7526",
-      "username": "abc",
+      "id": "cffb",
+      "username": "Hola",
       "password": "1234"
     },
     {
-      "id": "d23d",
-      "username": "abc",
-      "password": "1234"
+      "id": "eab1",
+      "username": "Abc",
+      "password": "abc",
+      "role": "Student"
     },
     {
-      "id": "2247",
-      "username": "abc",
-      "password": "1234"
+      "id": "44e5",
+      "username": "Andy",
+      "password": "1234",
+      "role": "Student"
+    },
+    {
+      "id": "186b",
+      "username": "Abc",
+      "password": "abc",
+      "role": "Student"
+    },
+    {
+      "id": "97e8",
+      "username": "Abc",
+      "password": "abc",
+      "role": "Student"
     }
   ]
 }
