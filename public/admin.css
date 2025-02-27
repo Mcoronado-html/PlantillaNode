@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: beige;
+}
+.grid-containerAdmin{
+
+    display: grid;
+    position: relative;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+    margin-left: 325px;
+    margin-top: 10px;
+    background-color: rgb(234, 77, 228);
+
+}
+.gridAdmin{
+
+        background-color: rgb(235, 106, 106);
+        box-sizing: border-box;
+        border-radius: 10%;
+
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

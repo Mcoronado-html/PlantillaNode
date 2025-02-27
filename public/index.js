@@ -1,4 +1,4 @@
-import { postUsers, getUsers, deleteUser, updateUsers } from "./services/Q&Aservices.js";
+import { postUsers, getUsers } from "./services/Q&Aservices.js";
 const userSign = document.getElementById("signUser")
 const passSign = document.getElementById("signPass")
 const btnSign = document.getElementById("signBtn")
@@ -37,7 +37,7 @@ try {
          
         } else if(userAdmin){
             console.log("Admin")  
-            // window.location.href = 'Q&A.html';
+            window.location.href = 'admin.html';
 
         }else{ 
             Swal.fire({
