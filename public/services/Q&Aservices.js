@@ -53,14 +53,12 @@ async function updateUsers(data, endpoint,id)
     try {
 
         const response = await fetch(`http://localhost:3001/${endpoint}/`+id, {
-            method: 'PUT',
+            method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
         });
-
-     
         return await response.json();
     } catch (error) {
         console.error('Error update user:', error);

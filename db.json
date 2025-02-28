@@ -1,23 +1,8 @@
 {
   "questions": [
     {
-      "id": "fea5",
-      "questions": "Hola",
-      "Username": "Andy"
-    },
-    {
-      "id": "2d1d",
-      "questions": "Hola",
-      "Username": "Joseph"
-    },
-    {
-      "id": "9ba7",
-      "questions": "Mundo",
-      "Username": "Andy"
-    },
-    {
-      "id": "2444",
-      "questions": "Mundo",
+      "id": "a688",
+      "questions": "dsada",
       "Username": "Andy"
     }
   ],
@@ -39,6 +24,12 @@
       "username": "Joseph",
       "password": "1234",
       "role": "Student"
+    }
+  ],
+  "replies": [
+    {
+      "id": "4496",
+      "reply": "hdsadosad"
     }
   ]
 }
