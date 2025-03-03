@@ -1,40 +1,60 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: beige;
-}
-.grid-containerAdmin{
-
-    display: grid;
-    position: relative;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body {
+    background-color: #FAF3E0;
+    font-family: 'Poppins', sans-serif;
+    color: #5A4A42;
+    display: flex;
     justify-content: center;
-    width: 800px;
-    height: 800px;
-    margin-left: 325px;
-    margin-top: 10px;
-    background-color: rgb(234, 77, 228);
-
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
-.gridAdmin{
-
-        background-color: rgb(235, 106, 106);
-        box-sizing: border-box;
-        border-radius: 10%;
-
+.grid-containerAdmin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 900px;
 }
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
+.headerAdmin {
+    background: #FFF5E1;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
+    text-align: center;
+}
+#adminTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+th {
+    background-color: #E8D8C4;
+    color: #5A4A42;
+    padding: 12px;
+    border-radius: 8px 8px 0 0;
     text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+}
+td {
+    padding: 12px;
+    border-bottom: 1px solid #D3B8A1;
+}
+tr:nth-child(even) {
+    background-color: #FDF8F2;
+}
+.adminBtns {
+    background: #A67C52;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 5px;
+}
+.adminBtns:hover {
+    background: #8B5E3B;
+}
